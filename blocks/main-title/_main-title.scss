@@ -1,0 +1,132 @@
+.main-title{
+    background-color: black;
+    color: white;
+}
+.main-title__img{
+    width: 60%;
+    position: relative;
+    left: 40%;
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+.main-title__block{
+    background-color: black;
+    position: absolute;
+    padding-left: 7.083vw;
+    top: 19vw;
+}
+.main-title__p{
+    padding-top: 2vw;
+    font-size: 14pt;
+    color: #9C9C9C;
+    margin-bottom: -25px;
+}
+.main-title__h1{
+    font-size: 50pt;
+    font-weight: lighter;
+    padding-right: 3.47vw;
+
+    &--green {
+        @extend .main-title__h1;
+        color: #28553F;
+    }
+}
+.main-title__button{
+    margin-bottom: 4vw;
+    margin-right: 1.736vw;
+    background-color: #28553F;
+    color: white;
+    border: 0;
+    font-size: 16pt;
+    padding: 1.736vw 2.778vw 1.736vw 2.778vw;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+    &--grey {
+        @extend .main-title__button;
+        background-color: #141414;
+    }
+}
+.main-title__button:hover{
+    background-color: #1c3b2c;
+}
+.main-title__button--grey:hover{
+        background-color: #313131;
+    }
+@media (max-width:1250px) {
+    .main-title__h1{
+        font-size: 40pt;
+    }
+    .main-title__block{
+        position: absolute;
+        top: 21vw;
+    }
+}
+@media (max-width:1024px) {
+    .main-title__h1{
+        font-size: 35pt;
+    }
+    .main-title__img{
+        width: 80%;
+        position: relative;
+        left: 10%;
+        margin-top: 320px;
+    }
+    .main-title__p{
+        font-size: 12pt;
+    }
+    .main-title{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-title__block{
+        position: absolute;
+        top: 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-title__button{
+        font-size: 14pt;
+        margin-bottom: 3.5vw;
+    }
+}
+@media (max-width: 600px) {
+    .main-title__h1{
+        font-size: 30pt;
+    }    
+    .main-title__button{
+        font-size: 10pt;
+        margin-bottom: 3vw;
+    }
+    .main-title__img{
+        margin-top: 280px;
+    }
+    .main-title__p{
+        font-size: 10pt;
+        margin-bottom: -20px;
+    }
+}
+@media (max-width: 500px) {
+    .main-title__h1{
+        font-size: 25pt;
+    }    
+    .main-title__img{
+        margin-top: 220px;
+    }
+}
+@media (max-width: 430px) {
+    .main-title__h1{
+        font-size: 20pt;
+    }    
+    .main-title__button{
+        font-size: 8pt;
+        margin-bottom: 2vw;
+    }
+    .main-title__img{
+        margin-top: 180px;
+    }
+    .main-title__p{
+        font-size: 8pt;
+        margin-bottom: -15px;
+    }
+}
